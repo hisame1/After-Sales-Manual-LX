@@ -65,37 +65,8 @@
             cursor: not-allowed;
         }
 
-        /* --- Feedback Button --- */
-        .feedback-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #4a9eff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-            transition: all 0.3s;
-            text-decoration: none;
-        }
 
-        .feedback-btn:hover {
-            background: #3a8eef;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-        }
 
-        .feedback-btn:active {
-            transform: translateY(0);
-        }
 
         /* --- Sidebar --- */
         .sidebar {
@@ -726,12 +697,8 @@
                 padding: 8px 15px;
                 font-size: 12px;
             }
-            .feedback-btn {
-                bottom: 10px;
-                right: 10px;
-                padding: 8px 15px;
-                font-size: 12px;
-            }
+
+
         }
 
         /* --- PDF 生成样式 --- */
@@ -741,9 +708,8 @@
         .pdf-mode .download-pdf-btn {
             display: none;
         }
-        .pdf-mode .feedback-btn {
-            display: none;
-        }
+
+
         .pdf-mode .main-content {
             margin-left: 0;
             padding: 20px;
@@ -1449,10 +1415,8 @@
         📄 Download PDF
     </button>
 
-    <!-- Feedback Button -->
-    <a href="feedback-form.html" class="feedback-btn" target="_blank">
-        💬 Feedback
-    </a>
+
+
 
     <!-- Settings Tooltip CCB (JS-driven, appended to body) -->
     <div id="tooltip-CCB"></div>
